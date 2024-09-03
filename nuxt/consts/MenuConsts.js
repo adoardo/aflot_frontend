@@ -1,0 +1,55 @@
+import { ref } from "vue"
+export const menu = ref([
+  { name: 'Новости', link: '/news'},
+  { name: 'Статьи', link: '/single-post'},
+  { name: 'Тарифы', link: '/tarif'},
+  { name: 'Документы', link: '/flot-dock'},
+  { name: 'О сервисе', link: '/about'},
+  { name: 'Контакты', link: '/contact'},
+  { name: 'Вакансия моряка', link: '/about-sailor'},
+  { name: 'О вакансии', link: '/about-vacancies'},
+  { name: 'Настройки оплаты', link: '/setting-payment'},
+  { name: 'Статистика 1-я страница', link: '/statistics'},
+  { name: 'Статистика 2-я страница', link: '/statistics-2'},
+  { name: 'Избранное', link: '/sailor/favorites'},
+  { name: 'Редактированние резюме', link: '/sailor/resume'},
+  { name: 'Профиль о компании', link: '/company/profile'},
+  { name: 'Общая страница вакансий', link: '/company/vacansies'},
+  { name: 'Создание вакансии', link: '/company/new'},
+  { name: 'Редактирования вакансии', link: '/company/edit'},
+  { name: 'Принятые предложения', link: '/about-page/accepted-proposals'},
+  { name: 'Аукцион', link: '/about-page/auction'},
+  { name: 'Баланс 1-я страница', link: '/about-page/balance'},
+  { name: 'Баланс 2-я страница', link: '/about-page/balance-2'},
+  { name: 'Избранные моряки', link: '/about-page/featured-sailor'},
+  { name: 'Принятые моряки', link: '/about-page/accepted-sailors'},
+  { name: 'Входящие отклики', link: '/about-page/incoming-responses'},
+  { name: 'История операций', link: '/about-page/operation-history'},
+  { name: 'Исходящие предложения', link: '/about-page/outgoing-offers'},
+  { name: 'Тарифы 2-я страница', link: '/about-page/rates'},
+  { name: 'Создание рассылки', link: '/mailings/create-newsletter'},
+  { name: 'Общие результаты', link: '/mailings/mailing-results'},
+  { name: 'Результаты конкретной рассылки', link: '/mailings/specific-newsletter'},
+])
+
+export const MenuSea = ref([
+  { name: 'МОРСКИЕ ВАКАНСИИ', link: '/vacancies'},
+  { name: 'АНКЕТЫ МОРЯКОВ', link: '/resumes'},
+  { name: 'МОРСКОЙ <br/>ФЛОТ', link: '/navy'},
+  { name: 'МОРСКИЕ ДОКУМЕНТЫ', link: '/flot-dock'},
+  { name: 'НАЧАТЬ РАБОТУ В МОРЕ', link: '/work-sea'},
+])
+
+export const MenuCompany = ref([
+  { name: 'Создать новую вакансию', link: '/company/new', icon: 'lk-about-1.svg'},
+  { name: 'Вакансии', link: '/company/vacansies?tab=0', icon: 'lk-about-2.svg'},
+  { name: 'Черновики', link: '/company/vacansies?tab=1', icon: 'lk-about-3.svg'},
+  { name: 'Неактуальные вакансии', link: '/company/vacansies?tab=2', icon: 'lk-about-4.svg'},
+  { name: 'Избранное / Черный список', link: '', icon: 'lk-about-5.svg'},
+  { name: 'Статистика', link: '', icon: 'lk-about-6.svg'},
+  { name: 'Платные услуги', link: '', icon: 'lk-about-7.svg'},
+  { name: 'Баланс и история операций', link: '/company/balance', icon: 'lk-about-8.svg'},
+  { name: 'Настройки профиля', link: '/company/profile', icon: 'lk-about-9.svg'},
+  { name: 'Выйти', link: '', icon: 'lk-about-10.svg'},
+])
+
